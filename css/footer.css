@@ -29,17 +29,17 @@ footer ul {
     text-align: center;
 }
 
-footer div:nth-child(3) ul {
+footer nav:nth-of-type(2) ul {
     display: flex;
     justify-content: space-between;
     font-size: 3rem;
 }
 
-footer div:nth-child(3) ul li {
+footer nav:nth-of-type(2) ul li {
     padding: 0 15px;
 }
 
-footer div:last-child {
+footer > div:last-child {
     text-align: right;
 }
 
