@@ -1,0 +1,21 @@
+.header-accueil{
+    background-color: #C49E44;
+}
+
+#fleche-noire {
+    width: 300px;
+}
+
+#fleche-noire:hover {
+    content: url("../img/fleche_spotify_hover.png");
+}
+
+
+/*------------------------------------------------------------------A RETIRER*/
+.main-accueil{
+    background-color: #C49E44;
+}
+
+.main-accueil img{
+    width: 300px;
+}
