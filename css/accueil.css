@@ -1,9 +1,48 @@
-.header-accueil{
+a[href="./index.html"]{
+    color: #d679a6;
+    border: none;
+}
+
+/*HEADER MAIN-----------------------------*/
+main header{
     background-color: #C49E44;
+    color: black;
+    padding: 20% 0 18%;
+    position: relative;
+}
+
+main header > img {
+    position: absolute;
+    width: 220px;
+    top: 48%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+main header h2, main header div {
+    position: relative;
+    z-index: 1;
+}
+
+main header h2{
+    text-transform: uppercase;
+    font-size: 3.1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+header div p {
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+}
+
+#dispo-spotify{
+    font-weight: bold;
 }
 
 #fleche-noire {
-    width: 300px;
+    width: 30vw;
 }
 
 #fleche-noire:hover {
@@ -11,11 +50,20 @@
 }
 
 
-/*------------------------------------------------------------------A RETIRER*/
-.main-accueil{
-    background-color: #C49E44;
+/*MAIN------PRESENTATION----------------*/
+main > div{
+    margin: 20% 5%;
 }
 
-.main-accueil img{
-    width: 300px;
+#presentation h2{
+    color: #d679a6;
+    font-family: "damion", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-bottom: 35px;
+}
+
+
+/*------------------------------------------------------------------A RETIRER*/
+main img{
+    width: 60vw;
 }
