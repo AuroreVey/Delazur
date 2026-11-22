@@ -1,17 +1,17 @@
-a[href="./index.html"]{
+a[href="./index.html"] {
     color: #d679a6;
     border: none;
 }
 
 /*HEADER MAIN-----------------------------*/
-main header{
+main header {
     background-color: #C49E44;
     color: black;
     padding: 20% 0 18%;
     position: relative;
 }
 
-main header > img {
+main header>img {
     position: absolute;
     width: 220px;
     top: 48%;
@@ -20,12 +20,13 @@ main header > img {
     z-index: 0;
 }
 
-main header h2, main header div {
+main header h2,
+main header div {
     position: relative;
     z-index: 1;
 }
 
-main header h2{
+main header h2 {
     text-transform: uppercase;
     font-size: 3.1em;
     text-align: center;
@@ -37,7 +38,7 @@ header div p {
     letter-spacing: -0.5px;
 }
 
-#dispo-spotify{
+#dispo-spotify {
     font-weight: bold;
 }
 
@@ -51,11 +52,11 @@ header div p {
 
 
 /*PRESENTATION-----------------------*/
-main > div{
+main>div {
     margin: 20% 5%;
 }
 
-#presentation h2{
+#presentation h2 {
     color: #d679a6;
     font-family: "damion", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
@@ -63,7 +64,7 @@ main > div{
 }
 
 /*CARTES MEMBRES-------------------*/
-article h3{
+article h3 {
     color: #C49E44;
     text-transform: uppercase;
     font-size: 1.4em;
@@ -80,7 +81,8 @@ tr {
     border-bottom: 1px solid white;
 }
 
-th, td {
+th,
+td {
     padding: 8px 0;
 }
 
@@ -103,7 +105,7 @@ article {
     box-sizing: border-box;
 }
 
-article > img {
+article>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,7 +117,84 @@ article > img {
     z-index: 0;
 }
 
-article h3, article table {
+article h3,
+article table {
     position: relative;
     z-index: 1;
+}
+
+@media screen and (min-width: 800px) {
+
+    /*HEADER MAIN DESKTOP---------------------------*/
+    main header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 30vh;
+        padding: 9% 3%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    main header>img {
+        position: absolute;
+        width: 200px;
+        top: 50%;
+        left: 3%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    main header h2 {
+        font-size: 2.5em;
+        margin-right: 30px;
+    }
+
+    main div p {
+        font-size: 0.7em;
+    }
+
+    #fleche-noire {
+        width: 150px;
+    }
+
+    main header::before, main header::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(3% + 25px);
+    width: 420px;
+    height: 200px;
+    transform: translateY(-50%);
+    background-image:
+        url("../img/azur-mimosa.png"),
+        url("../img/azur-mimosa.png"),
+        url("../img/azur-mimosa.png"),
+        url("../img/azur-mimosa.png"),
+        url("../img/azur-mimosa.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    }
+
+    main header::before {
+    background-position:
+        0 0, 45px 0, 85px 0, 125px 0, 165px 0;
+    opacity: 0.8;
+    mask-image: linear-gradient(to right, white, transparent);
+    }
+
+    main header::after {
+    left: calc(3% + 45px);
+    background-position:
+        0 0, 45px 0, 85px 0, 125px 0, 165px 0;
+    opacity: 0.8;
+    mask-image: linear-gradient(to right, white, transparent);
+    }
+
+    /*PRESENTATION DESKTOP---------------------------*/
+
+    main{
+        background-color: black;
+    }
 }
