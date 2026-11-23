@@ -1,0 +1,36 @@
+main{
+    background-color: black;
+}
+
+h1{
+    color: #C49E44;
+    font-family: "damion", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2{
+    color: #d679a6;
+}
+
+h3{
+    color:#C49E44;
+}
+
+img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article h3,
+article img {
+    grid-column: span 2;
+}
