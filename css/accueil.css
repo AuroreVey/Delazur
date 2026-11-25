@@ -58,7 +58,6 @@ main>div {
 
 #presentation h2 {
     color: #d679a6;
-    font-family: "damion", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     margin-bottom: 35px;
 }
@@ -125,6 +124,36 @@ article table {
 
 @media screen and (min-width: 800px) {
 
+    /*FOND NOIR NAV + MAIN DESKTOP----------------------*/
+        body {
+        gap: 0;
+    }
+
+    body>header, main {
+        grid-column: 1 / 17;
+    }
+
+    body>header>div {
+        margin: 3% 6%;
+    }
+
+    body>header>nav, main {
+        background-color: black;
+        padding: 0 6%;
+    }
+
+    body>header>nav>ul {
+        margin-bottom: 0;
+    }
+
+    main {
+        padding-top: 5%;
+    }
+
+    main>div {
+        margin: 5% 2%;
+    }
+
     /*HEADER MAIN DESKTOP---------------------------*/
     main header {
         display: flex;
@@ -159,42 +188,98 @@ article table {
         width: 150px;
     }
 
-    main header::before, main header::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: calc(3% + 25px);
-    width: 420px;
-    height: 200px;
-    transform: translateY(-50%);
-    background-image:
-        url("../img/azur-mimosa.png"),
-        url("../img/azur-mimosa.png"),
-        url("../img/azur-mimosa.png"),
-        url("../img/azur-mimosa.png"),
-        url("../img/azur-mimosa.png");
-    background-size: 200px 200px;
-    background-repeat: no-repeat;
+    main header::before,
+    main header::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(3% + 25px);
+        width: 420px;
+        height: 200px;
+        transform: translateY(-50%);
+        background-image:
+            url("../img/azur-mimosa.png"),
+            url("../img/azur-mimosa.png"),
+            url("../img/azur-mimosa.png"),
+            url("../img/azur-mimosa.png"),
+            url("../img/azur-mimosa.png");
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
     }
 
     main header::before {
-    background-position:
-        0 0, 45px 0, 85px 0, 125px 0, 165px 0;
-    opacity: 0.8;
-    mask-image: linear-gradient(to right, white, transparent);
+        background-position:
+            0 0, 45px 0, 85px 0, 125px 0, 165px 0;
+        opacity: 0.8;
+        mask-image: linear-gradient(to right, white, transparent);
     }
 
     main header::after {
-    left: calc(3% + 45px);
-    background-position:
-        0 0, 45px 0, 85px 0, 125px 0, 165px 0;
-    opacity: 0.8;
-    mask-image: linear-gradient(to right, white, transparent);
+        left: calc(3% + 45px);
+        background-position:
+            0 0, 45px 0, 85px 0, 125px 0, 165px 0;
+        opacity: 0.8;
+        mask-image: linear-gradient(to right, white, transparent);
     }
 
     /*PRESENTATION DESKTOP---------------------------*/
+#presentation p {
+    font-size: 0.8em;
+}
 
-    main{
-        background-color: black;
-    }
+/* CARTES MEMBRES DESKTOP ------------------ */
+
+#cartes-membres {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    width: 15%;
+    min-width: 200px;
+    min-height: 0;
+    aspect-ratio: 2 / 3;
+    margin: 0;
+}
+
+article h3 {
+    font-size: 1em;
+    margin-bottom: 8%;
+}
+
+article > img {
+    filter: brightness(1);
+    transition: filter 0.3s;
+}
+
+article table {
+    display: none;
+    font-size: 0.6em;
+    height: 80%;
+}
+
+article th,
+article td {
+    padding: 4px;
+}
+
+article th {
+    width: 40%;
+}
+
+article td {
+    width: 60%;
+}
+
+article:hover > img {
+    filter: brightness(0.2);
+}
+
+/*Découverte du display : table - qui est spécifique à l'affichage des tableaux*/
+article:hover table {
+    display: table;
+}
 }

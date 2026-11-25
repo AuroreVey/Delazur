@@ -33,7 +33,89 @@
         </nav>
     </header>
     <main>
-    <!--CONTENU------------------------------------------------------------------------------------------------->
+    <h2 class="serif">Contact</h2>
+
+    <form class="formulaire-contact">
+
+        <!-- Informations générales -->
+        <fieldset class="informations-generales">
+            <legend>Informations générales</legend>
+
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom"
+                    minlength="2" required>
+            </div>
+
+            <div>
+                <label for="nom">Nom de famille</label>
+                <input type="text" id="nom" name="nom"
+                    minlength="2" required>
+            </div>
+
+            <div>
+                <label for="courriel">Adresse courriel</label>
+                <input type="email" id="courriel" name="courriel">
+            </div>
+
+            <div>
+                <label for="naissance">Date de naissance</label>
+                <input type="date" id="naissance" name="naissance">
+            </div>
+
+            <div>
+                <label for="age">Et ton âge?</label>
+                <input type="number" id="age" name="age"
+                    min="0" max="99">
+            </div>
+
+            <div>
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone">
+            </div>
+        </fieldset>
+
+        <!-- Adresse -->
+<fieldset class="adresse">
+    <legend>Adresse</legend>
+
+    <div>
+        <label for="numero-civique">Numéro civique</label>
+        <input type="number" id="numero-civique"
+            name="numero-civique" min="1">
+    </div>
+
+    <div>
+        <label for="rue">Rue</label>
+        <input type="text" id="rue" name="rue">
+    </div>
+
+    <div>
+        <label for="province">Province</label>
+        <select id="province" name="province">
+            <option value="">Choisir une province</option>
+            <option value="quebec">Québec</option>
+            <option value="ontario">Ontario</option>
+            <option value="alberta">Alberta</option>
+            <option value="autre">Autre</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="pays">Pays</label>
+        <input type="text" id="pays" name="pays">
+    </div>
+
+    <div>
+        <label for="code-postal">Code Postal</label>
+        <input type="text" id="code-postal"
+            name="code-postal"
+            pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]"
+            title="Exemple : H2X 1A4">
+    </div>
+</fieldset>
+
+    </form>
     </main>
     <footer>
         <div>
