@@ -1,5 +1,5 @@
-main {
-    background-color: hsl(0, 0%, 0%, 70%);
+header > nav, main{
+    background-color: hsl(0, 0%, 0%, 80%);
 }
 .spectacles h2 {
     margin: 50px 0 30px;
@@ -69,7 +69,7 @@ main {
     font-weight: 800;
 }
 
-.spectacle p,
+.spectacle time,
 .spectacle address {
     margin: 0 0 5px;
     font-family: "Montserrat", sans-serif;
@@ -184,6 +184,12 @@ main {
 }
 
 @media (max-width: 1200px) {
+
+    .spectacles h2 {
+        font-size: 3rem;
+        margin: 30px 0 20px;
+    }
+
     .liste-spectacles {
         grid-template-columns: 1fr;
         width: 80%;
@@ -193,6 +199,25 @@ main {
         grid-column: 1;
         grid-row: auto;
     }
+
+    .spectacle > div {
+    min-width: 0;
+}
+
+.spectacle h3 {
+    font-size: clamp(1.3rem, 4vw, 1.7rem);
+    overflow-wrap: anywhere;
+}
+
+.spectacle a {
+    padding: 10px clamp(10px, 2.5vw, 18px);
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.spectacle time, .spectacle address {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    overflow-wrap: anywhere;
+}
 
     .infolettre button {
         background-color: #d477a4;
