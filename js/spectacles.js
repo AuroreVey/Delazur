@@ -26,6 +26,7 @@ function fermerModale() {
     boutonOuvrir.focus();
 }
 
+// Les event listener pour ouvrir , fermer et confirmer modale
 boutonOuvrir.addEventListener("click", ouvrirModale);
 boutonFermer.addEventListener("click", fermerModale);
 boutonFermerConfirmation.addEventListener("click", fermerModale);
@@ -34,6 +35,7 @@ boutonFermerConfirmation.addEventListener("click", fermerModale);
 formulaire.addEventListener("submit", function (event) {
     event.preventDefault(); // empêche le rechargement de la page
 
+// Permet de retirer les espace ajouté autour de l'adresse courriel
     const courriel = champCourriel.value.trim();
 
     if (!regexCourriel.test(courriel)) {

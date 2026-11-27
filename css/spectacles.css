@@ -1,6 +1,7 @@
 header > nav, main{
-    background-color: hsl(0, 0%, 0%, 80%);
+    background-color: hsl(0, 0%, 0%);
 }
+
 .spectacles h2 {
     margin: 50px 0 30px;
     color: #d477a4;
@@ -91,6 +92,7 @@ header > nav, main{
 .spectacle a:hover,
 .spectacle a:focus {
     background-color: #f5c84d;
+    transform: scale(1.1);
 }
 
 .infolettre button {
@@ -110,6 +112,7 @@ header > nav, main{
 .infolettre button:hover,
 .infolettre button:focus {
     background-color: #d477a4;
+    transform: scale(1.1);
 }
 
 .fond-modale {
